@@ -1,0 +1,34 @@
+//Full Height
+@mixin fullheight {
+    min-height: $full-height;
+}
+//Full Width
+@mixin fullwidth {
+    min-width: $full-width;
+}
+//Media Breakpoint for Each Device
+
+//Small Screen (min-width: 576)
+@mixin sm-screen {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+//Medium Screen (min-width: 768)
+@mixin md-screen {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+//Large Screen (min-width: 992)
+@mixin lg-screen {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+//Xtra Large Screen (min-width: 1200)
+@mixin xl-screen {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}

@@ -18,7 +18,7 @@ module.exports = {
                 use: 'babel-loader'
             },
             {
-                test: /\.(scss|css)$/,
+                test: /\.scss$/,
                 use: [
                     miniCssExtractPlugin.loader,
                     'css-loader',
@@ -31,14 +31,14 @@ module.exports = {
                 use: 'html-loader'
             },
             {
-                test: /\.(jpg|jpeg|png|svg)$/,
+                test: /\.(jpg|jpeg|png|svg|ico)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'img/',
-                            publicPath: 'img/'
+                            outputPath: 'img',
+                            publicPath: 'img'
                         }
                     }
                 ]
@@ -65,7 +65,7 @@ module.exports = {
         }),
         new cleanWebpackPlugin(['dist']),
         new miniCssExtractPlugin({
-            filename: 'css/[name].css'
+            filename: '[name].css'
         }),
         new htmlWebpackPlugin({
             template: 'src/index.html',

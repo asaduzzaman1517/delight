@@ -1,0 +1,14 @@
+/* 4.2 Hero Section Style */
+.hero {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-1.png) center right no-repeat;
+    background-size: cover;
+    &--overlay {
+        background: rgba($dark-bg, .8);
+    }
+    &--title {
+        font-size: 8.5vw;
+        color: $full-light;
+    }
+}

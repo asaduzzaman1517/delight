@@ -1,0 +1,12 @@
+/* 6.1 Background*/
+.t-bg-dark {
+    background: rgba($dark-bg, 1);
+}
+/* 6.2 ViewPort Height*/
+.t-vh-100 {
+    @include fullheight;
+}
+/* 6.3 Z-index*/
+.t-zindex-top {
+    z-index: 9999;
+}
