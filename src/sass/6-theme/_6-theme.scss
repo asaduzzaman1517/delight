@@ -2,11 +2,16 @@
 .t-bg-dark {
     background: rgba($dark-bg, 1);
 }
-/* 6.2 ViewPort Height*/
+/* 6.2 ViewPort Height */
 .t-vh-100 {
     @include fullheight;
 }
-/* 6.3 Z-index*/
+/* 6.3 Z-index */
 .t-zindex-top {
     z-index: 9999;
+}
+/* 6.4 Logo */
+.t-logo {
+    height: 1.9rem;
+    width: 4.8rem;
 }
