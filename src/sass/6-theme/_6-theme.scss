@@ -1,6 +1,6 @@
 /* 6.1 Background*/
 .t-bg-dark {
-    background: rgba($dark-bg, 1);
+    background: $dark-bg;
 }
 /* 6.2 ViewPort Height */
 .t-vh-100 {
@@ -12,8 +12,8 @@
 }
 /* 6.4 Logo */
 .t-logo {
-    height: 1.9rem;
-    width: 4.8rem;
+    max-height: 1.9rem;
+    max-width: 4.8rem;
 }
 /* 6.5 Text-top with theme color*/
 .t-text-top {
@@ -35,4 +35,8 @@
     height: .3rem;
     margin: 1rem 0;
     background: $theme-color;
+}
+/* 6.8 Margin X Y 50% */
+.t-my {
+    margin: 50% 0;
 }
