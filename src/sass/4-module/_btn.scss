@@ -1,4 +1,4 @@
-/* 4.1 Custom Button Style*/
+/* 4.2 Custom Button Style*/
 .btn {
     &-themecolor {
         background: $theme-color;
@@ -7,6 +7,7 @@
         font-family: $heading-font;
         color: $full-light;
         font-weight: 600;
+        text-transform: uppercase;
     }
     &:hover {
         color: lighten($theme-color, 20%);

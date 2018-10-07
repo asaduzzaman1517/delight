@@ -3,4 +3,12 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $heading-font;
     font-weight: $heading-font-weight;
+    color: $heading-color;
+    text-transform: uppercase;
+}
+/* 1.2 Default Body Font Family*/
+body {
+    font-family: $body-font;
+    font-weight: $body-font-weight;
+    color: $body-text;
 }

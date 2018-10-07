@@ -15,3 +15,24 @@
     height: 1.9rem;
     width: 4.8rem;
 }
+/* 6.5 Text-top with theme color*/
+.t-text-top {
+    font-size: .75rem;
+    font-weight: $body-strong;
+    letter-spacing: .15rem;
+    margin-bottom: .3rem;
+    color: $theme-color;
+    text-transform: uppercase;
+    
+}
+/* 6.6 Section Padding */
+.t-section-gap {
+    padding: 6rem 0;
+}
+/* 6.7 Hr Style */
+.t-hr {
+    width: 3rem;
+    height: .3rem;
+    margin: 1rem 0;
+    background: $theme-color;
+}

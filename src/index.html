@@ -17,7 +17,11 @@
     <link rel="icon" type="image/ico" href="img/favicon.ico">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Open+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Open+Sans:300,600" rel="stylesheet">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Font Awesome Icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- CSS Files: e.g. Vendor css, main css-->
 </head>
@@ -26,32 +30,28 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-dark t-bg-dark">
             <div class="container d-flex justify-content-between">
-                
                 <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="delight logo" class="t-logo"></a>
-                
                 <a class="navbar-toggler t-zindex-top" data-toggle="collapse" data-target="#collapseMenu">
                     <span class="navbar-toggler-icon"></span>
                 </a>
-
             </div><!--container-->
-
             <div class="fixed-top collapse" id="collapseMenu">
                 <div class="d-flex t-vh-100 justify-content-center align-items-center t-bg-dark">
                     <ul class="nav flex-column text-center">
-                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text text-uppercase">home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text text-uppercase">about us</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text text-uppercase">menu</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text text-uppercase">reservation</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text text-uppercase">gallery</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text text-uppercase">contact</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text text-uppercase">shop</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text">home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text">about us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text">menu</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text">reservation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text">gallery</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text">contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link h2 text-light btn-text">shop</a></li>
                     </ul>
                 </div>
             </div><!--Collapse-menu-->
-
         </nav><!--navbar-->
     </header>
     <!-- Header End -->
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero--overlay">
@@ -59,9 +59,9 @@
                 <div class="row">
                     <div class="col d-flex text-center justify-content-center align-items-center t-vh-100">
                         <div class="flex-column ">
-                            <h1 class="text-uppercase hero--title">fresh flavors creative catering</h1>
+                            <h1 class="hero--title">fresh flavors creative catering</h1>
                             <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, sed sit autem harum nostrum veritatis incidunt deserunt</p>
-                            <a href="#" class="btn btn-themecolor text-uppercase btn-text">view menu</a>
+                            <a href="#" class="btn btn-themecolor btn-text">view menu</a>
                         </div><!--Flex-column-->
                     </div>
                 </div><!--row-->
@@ -70,6 +70,148 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- Script Files -->
+    <!-- Visiting Card -->
+    <section class="visting-card t-section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="media">
+                        <i class="material-icons md-48 md-dark mr-4 align-self-start">alarm_on</i>
+                        <div class="media-body">
+                            <span class="t-text-top">
+                                opening time
+                            </span>
+                            <p class="h6">11.00 am - 9.00 pm</p>
+                        </div><!--media-body-->
+                    </div><!--media-->
+                </div><!--column-->
+                <div class="col-md my-4">
+                    <div class="media">
+                        <i class="material-icons md-48 md-dark mr-4 align-self-start">local_phone</i>
+                        <div class="media-body">
+                            <span class="t-text-top">
+                                opening time
+                            </span>
+                            <p class="h6">11.00 am - 9.00 pm</p>
+                        </div><!--media-body-->
+                    </div><!--media-->
+                </div><!--column-->
+                <div class="col-md">
+                    <div class="media">
+                        <i class="material-icons md-48 md-dark mr-4 align-self-start">mail_outline</i>
+                        <div class="media-body">
+                            <span class="t-text-top">
+                                opening time
+                            </span>
+                            <p class="h6">11.00 am - 9.00 pm</p>
+                        </div><!--media-body-->
+                    </div><!--media-->
+                </div><!--column-->
+            </div><!--row-->
+        </div><!--container-->
+    </section>
+    <!-- Visiting Card End -->
+
+    <!-- About -->
+    <section class="about t-section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/our-story.png" alt="our story image" class="about--img">
+                </div><!--column-->
+                <div class="col-md-6">
+                    <span class="t-text-top">our story</span>
+                    <h2>we like a bit of old school hospitality</h2>
+                    <hr class="t-hr">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusamus neque et pariatur sunt reiciendis.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusamus neque et pariatur sunt reiciendis.</p>
+                </div><!--column-->
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- About Rstaurant-->
+    <section class="about-restaurant t-section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-2">
+                    <img src="img/our-restaurant.jpg" alt="our story image" class="about-restaurant--img">
+                </div><!--column-->
+                <div class="col-md-6 order-1">
+                    <span class="t-text-top">our restaurant</span>
+                    <h2>our restaurant is more like home</h2>
+                    <hr class="t-hr">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusamus neque et pariatur sunt reiciendis.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusamus neque et pariatur sunt reiciendis.</p>
+                </div><!--column-->
+            </div>
+        </div>
+    </section>
+    <!-- About Restaurant End -->
+
+    <!-- Chef -->
+    <section class="chef t-section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="t-text-top">our experts</span>
+                    <h2>our chef</h2>
+                    <hr class="t-hr">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusamus neque et pariatur sunt reiciendis.</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="chef-gallery">
+                                <img src="img/chef-1.jpg" alt="chef" class="chef-gallery--img">
+                                <span class="t-text-top">master chef</span>
+                                <h6>gordon ramsay</h6>
+                            </div><!--chef-gallery-->
+                        </div><!--column-->
+                        <div class="col-md-6">
+                            <div class="chef-gallery">
+                                <img src="img/chef-2.jpg" alt="chef" class="chef-gallery--img">
+                                <span class="t-text-top">executive chef</span>
+                                <h6>jamie oliver</h6>
+                            </div><!--chef-gallery-->
+                        </div><!--column-->
+                        <div class="col-md-6">
+                            <div class="chef-gallery">
+                                <img src="img/chef-6.jpg" alt="chef" class="chef-gallery--img">
+                                <span class="t-text-top">sous chef</span>
+                                <h6>bobby flay</h6>
+                            </div><!--chef-gallery-->
+                        </div><!--column-->
+                        <div class="col-md-6">
+                            <div class="chef-gallery mb-lg-0">
+                                <img src="img/chef-7.jpg" alt="chef" class="chef-gallery--img">
+                                <span class="t-text-top">pastry chef</span>
+                                <h6>alain ducasse</h6>
+                            </div><!--chef-gallery-->
+                        </div><!--column-->
+                        <div class="col-md-6">
+                            <div class="chef-gallery mb-md-0">
+                                <img src="img/chef-8.jpg" alt="chef" class="chef-gallery--img">
+                                <span class="t-text-top">grill chef</span>
+                                <h6>anthony bourdin</h6>
+                            </div><!--chef-gallery-->
+                        </div><!--column-->
+                        <div class="col-md-6">
+                            <div class="chef-gallery mb-0">
+                                <img src="img/chef-2.jpg" alt="chef" class="chef-gallery--img">
+                                <span class="t-text-top">fry chef</span>
+                                <h6>mario batali</h6>
+                            </div><!--chef-gallery-->
+                        </div><!--column-->
+                        
+                    </div>
+                </div>
+            </div><!--row-->
+        </div><!--container-->
+    </section>
+    <!-- Chef End -->
+
+    <!-- LoadScript Files -->
 </body>
 </html>
