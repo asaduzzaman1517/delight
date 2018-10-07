@@ -11,3 +11,22 @@ import '../img/apple-icon.png';
 
 //Importing SASS File
 import '../sass/style.scss';
+
+
+// Document Ready Function
+$(function(){
+
+    //Fixed Header on Scroll
+    $(window).scroll(function(){
+        const distTop = $('html').scrollTop();
+        const headerHeight = $('#header').outerHeight();
+
+        //Apply this condition
+        if(distTop > headerHeight) {
+            $('#header').addClass('fixed-top');
+        }
+        else {
+            $('#header').removeClass('fixed-top');
+        }
+    });
+});

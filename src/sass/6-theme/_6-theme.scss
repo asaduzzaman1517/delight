@@ -36,7 +36,11 @@
     margin: 1rem 0;
     background: $theme-color;
 }
-/* 6.8 Margin X Y 50% */
-.t-my {
-    margin: 50% 0;
+// /* 6.8 Margin X Y 50% */
+// // .t-my {
+// //     transform: translateY(-50%);
+// // }
+.emni {
+    margin: 100% 0;
+    transform: translateY(-50%);
 }
