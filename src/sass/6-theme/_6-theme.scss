@@ -2,20 +2,12 @@
 .t-bg-dark {
     background: $dark-bg;
 }
-/* 6.2 ViewPort Height */
-.t-vh-100 {
-    @include fullheight;
-}
-/* 6.3 Z-index */
-.t-zindex-top {
-    z-index: 9999;
-}
-/* 6.4 Logo */
+/* 6.2 Logo */
 .t-logo {
     max-height: 1.9rem;
     max-width: 4.8rem;
 }
-/* 6.5 Text-top with theme color*/
+/* 6.3 Text ornament with theme color*/
 .t-text-top {
     font-size: .75rem;
     font-weight: $body-strong;
@@ -25,22 +17,18 @@
     text-transform: uppercase;
     
 }
-/* 6.6 Section Padding */
+/* 6.4 Section Padding */
 .t-section-gap {
     padding: 6rem 0;
 }
-/* 6.7 Hr Style */
+/* 6.5 Hr Style */
 .t-hr {
     width: 3rem;
     height: .3rem;
     margin: 1rem 0;
     background: $theme-color;
 }
-// /* 6.8 Margin X Y 50% */
-// // .t-my {
-// //     transform: translateY(-50%);
-// // }
-.emni {
-    margin: 100% 0;
-    transform: translateY(-50%);
+/* 6.6 Full Screen Height */
+.t-vh-100 {
+    @include fullheight;
 }
