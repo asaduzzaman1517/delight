@@ -34,6 +34,5 @@ $(function(){
     $('.navbar-toggler').on('click', function(){
         $('#full-screen').toggleClass('is-nav-fullscreen');
         $('#full-screen ul').toggleClass('is-align-center');
-        $('.nav-item a').toggleClass('h4');
     })
 });
