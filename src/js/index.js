@@ -1,5 +1,6 @@
 //Importing JQuery
 import '../../node_modules/jquery/dist/jquery';
+
 //Importing Bootstrap Script
 import '../../node_modules/bootstrap/dist/js/bootstrap.min';
 // Bootstrap Styles
@@ -21,7 +22,7 @@ $(function(){
         const distTop = $('html').scrollTop();
         const headerHeight = $('#header').outerHeight();
 
-        //Apply this condition
+        //Fixed header if this condition true
         if(distTop > headerHeight) {
             $('#header').addClass('fixed-top');
         }

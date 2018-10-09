@@ -9,10 +9,11 @@
 }
 /* 6.3 Text ornament with theme color*/
 .t-text-top {
-    font-size: .75rem;
+    font-size: .7rem;
     font-weight: $body-strong;
     letter-spacing: .15rem;
-    margin-bottom: .3rem;
+    margin-bottom: .4rem;
+    display: inline-block;
     color: $theme-color;
     text-transform: uppercase;
     
@@ -31,4 +32,16 @@
 /* 6.6 Full Screen Height */
 .t-vh-100 {
     @include fullheight;
+}
+/* 6.7 Rating Color */
+.t-rating {
+    color: $rating;
+}
+/* 6.8 theme Color */
+.t-theme-color {
+    color: $theme-color;
+}
+/* 6.9 card icon */
+.t-card-icon {
+    font-size: 1.75rem;
 }

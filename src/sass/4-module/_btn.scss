@@ -1,10 +1,14 @@
 /* 4.2 Custom Button Style*/
 .btn {
+    margin: 1rem 0;
+    border-radius: .1rem;
     &-themecolor {
         background: $theme-color;
     }
     &-text {
         font-family: $heading-font;
+        font-size: .7rem;
+        letter-spacing: .15rem;
         color: $full-light;
         font-weight: 600;
         text-transform: uppercase;
