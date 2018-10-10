@@ -18,7 +18,7 @@ module.exports = {
                 use: 'babel-loader'
             },
             {
-                test: /\.scss$/,
+                test: /\.(css|scss)$/,
                 use: [
                     miniCssExtractPlugin.loader,
                     'css-loader',
@@ -61,7 +61,8 @@ module.exports = {
     plugins: [
         new webpack.ProvidePlugin({
             $: 'jquery',
-            jQuery: 'jquery'
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         }),
         new cleanWebpackPlugin(['dist']),
         new miniCssExtractPlugin({
@@ -83,6 +84,12 @@ module.exports = {
                     name: 'vendor'
                 }
             }
+        }
+    },
+    resolve: {
+        modules: ['node_modules'],
+        alias: {
+            'owl.carousel': 'owl.carousel/dist/owl.carousel.min.js'
         }
     }
 };

@@ -1,6 +1,5 @@
 /* 4.4 About Section */
 .about {
-    background: lighten($dark-bg, 80%);
     &--img {
         width: 100%;
         display: none;
@@ -11,8 +10,4 @@
     &--img {
         @extend .about--img;
     }
-}
-/* 4.6 About Chef Section */
-.chef {
-    @extend .about;
 }

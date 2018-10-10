@@ -1,7 +1,14 @@
 /* 6.1 Background*/
-.t-bg-dark {
-    background: $dark-bg;
+.t-bg {
+    background: lighten($dark-bg, 75%);
+    &-light {
+        background: lighten($dark-bg, 80%);
+    }
+    &-dark {
+        background: $dark-bg; 
+    }
 }
+
 /* 6.2 Logo */
 .t-logo {
     max-height: 1.9rem;
@@ -44,4 +51,13 @@
 /* 6.9 card icon */
 .t-card-icon {
     font-size: 1.75rem;
+}
+/* 6.10 Icon */
+.t-icon {
+    font-size: 3rem;
+    color: lighten($dark-bg, 50%);
+}
+/* 6.11 Theme color dark */
+.t-color-dark {
+    color: $heading-color;
 }

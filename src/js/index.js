@@ -1,10 +1,15 @@
+
 //Importing JQuery
 import '../../node_modules/jquery/dist/jquery';
 
-//Importing Bootstrap Script
+//Bootstrap 4
 import '../../node_modules/bootstrap/dist/js/bootstrap.min';
-// Bootstrap Styles
 import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Owl.carousel
+import '../../node_modules/owl.carousel/dist/owl.carousel.min';
+import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+
 
 // Importing Favicon Image
 import '../img/favicon.ico';
@@ -12,6 +17,8 @@ import '../img/apple-icon.png';
 
 //Importing SASS File
 import '../sass/style.scss';
+
+
 
 
 // Document Ready Function
@@ -35,5 +42,22 @@ $(function(){
     $('.navbar-toggler').on('click', function(){
         $('#full-screen').toggleClass('is-nav-fullscreen');
         $('#full-screen ul').toggleClass('is-align-center');
+    })
+    //owl carousel for deal section
+    $('.deal--slide').owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 15,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            768: {
+                items: 2,
+                nav: true,
+                dots: true
+            }
+        }
     })
 });
