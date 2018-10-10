@@ -1,0 +1,12 @@
+/* 4.6 Reservaion */
+.reservation {
+    background:url(../img/chef-6.jpg) center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    &--overlay {
+        height: 100%;
+        width: 100%;
+        background: rgba($heading-color, .8);
+        position: absolute;
+    }
+}

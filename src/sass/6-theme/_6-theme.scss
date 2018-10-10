@@ -20,9 +20,13 @@
     font-weight: $body-strong;
     letter-spacing: .15rem;
     margin-bottom: .4rem;
-    display: inline-block;
+    display: block;
     color: $theme-color;
     text-transform: uppercase;
+    &--light {
+        @extend .t-text-top;
+        color: $full-light;
+    }
     
 }
 /* 6.4 Section Padding */
@@ -60,4 +64,10 @@
 /* 6.11 Theme color dark */
 .t-color-dark {
     color: $heading-color;
+}
+/* 6.12 Vertical alignment */
+.t-center-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
 }
