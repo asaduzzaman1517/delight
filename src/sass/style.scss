@@ -10,11 +10,9 @@
     Table of contents
 -----------------------------------------
     1. Base Style
-    2. Vendor CSS
-    3. Layout Style
-    4. Module Style
-    5. State Style
-    6. Theme Style
+    2. Module Style
+    3. State Style
+    4. Theme Style
     
 -----------------------------------------*/
 
@@ -23,22 +21,14 @@
 -----------------------------------------*/
 @import '1-base/1-base.scss';
 /*---------------------------------------
-    2. Vendor CSS
+    2. Module Style
 -----------------------------------------*/
-@import '2-vendor/2-vendor.scss';
+@import '2-module/2-module.scss';
 /*---------------------------------------
-    3. Layout Style
+    3. State Style
 -----------------------------------------*/
-@import '3-layout/3-layout.scss';
+@import '3-state/3-state.scss';
 /*---------------------------------------
-    4. Module Style
+    4. Theme Style
 -----------------------------------------*/
-@import '4-module/4-module.scss';
-/*---------------------------------------
-    5. State Style
------------------------------------------*/
-@import '5-state/5-state.scss';
-/*---------------------------------------
-    6. Theme Style
------------------------------------------*/
-@import '6-theme/6-theme.scss';
+@import '4-theme/4-theme.scss';

@@ -7,18 +7,20 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.min';
 import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Owl.carousel
-import '../../node_modules/owl.carousel/dist/owl.carousel.min';
+import 'owl.carousel';
 import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
 
 
 // Importing Favicon Image
 import '../img/favicon.ico';
 import '../img/apple-icon.png';
+import '../img/f-1.png';
+import '../img/f-2.jpeg';
+import '../img/f-3.jpeg';
+import '../img/f-5.jpeg';
 
 //Importing SASS File
 import '../sass/style.scss';
-
-
 
 
 // Document Ready Function
@@ -59,5 +61,13 @@ $(function(){
                 dots: true
             }
         }
+    })
+    //owl carousel for testimonial
+    $('.testimonial--slider').owlCarousel({
+        loop: true,
+        dots: false,
+        margin: 15,
+        items: 1,
+        autoplay: true
     })
 });

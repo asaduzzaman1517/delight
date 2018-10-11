@@ -1,0 +1,18 @@
+/* 2.9 Testimonial */
+.testimonial {
+    &--img {
+        display: inline-block!important;
+        width: 5rem!important;
+        height: 5rem;
+        border-radius: 50%;
+    }
+    &--before {
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f10d";
+            font-size: 2.5rem;
+            color: rgba($theme-color, .5);
+        }
+    }
+}

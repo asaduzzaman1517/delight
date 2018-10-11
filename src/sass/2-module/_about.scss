@@ -1,11 +1,11 @@
-/* 4.4 About Section */
+/* 2.3 About Section */
 .about {
     &--img {
         width: 100%;
         display: none;
     }
 }
-/* 4.5 About Restaurant Section */
+/* 2.4 About Restaurant Section */
 .about-restaurant {
     &--img {
         @extend .about--img;

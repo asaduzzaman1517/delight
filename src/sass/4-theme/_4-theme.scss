@@ -1,4 +1,4 @@
-/* 6.1 Background*/
+/* 4.1 Background*/
 .t-bg {
     background: lighten($dark-bg, 75%);
     &-light {
@@ -9,12 +9,12 @@
     }
 }
 
-/* 6.2 Logo */
+/* 4.2 Logo */
 .t-logo {
     max-height: 1.9rem;
     max-width: 4.8rem;
 }
-/* 6.3 Text ornament with theme color*/
+/* 4.3 Text ornament with theme color*/
 .t-text-top {
     font-size: .7rem;
     font-weight: $body-strong;
@@ -29,45 +29,49 @@
     }
     
 }
-/* 6.4 Section Padding */
+/* 4.4 Section Padding */
 .t-section-gap {
     padding: 6rem 0;
 }
-/* 6.5 Hr Style */
+/* 4.5 Hr Style */
 .t-hr {
     width: 3rem;
     height: .3rem;
     margin: 1rem 0;
     background: $theme-color;
 }
-/* 6.6 Full Screen Height */
+/* 4.6 Full Screen Height */
 .t-vh-100 {
     @include fullheight;
 }
-/* 6.7 Rating Color */
+/* 4.7 Rating Color */
 .t-rating {
     color: $rating;
 }
-/* 6.8 theme Color */
+/* 4.8 theme Color */
 .t-theme-color {
     color: $theme-color;
 }
-/* 6.9 card icon */
+/* 4.9 card icon */
 .t-card-icon {
     font-size: 1.75rem;
 }
-/* 6.10 Icon */
+/* 4.10 Icon */
 .t-icon {
     font-size: 3rem;
     color: lighten($dark-bg, 50%);
 }
-/* 6.11 Theme color dark */
+/* 4.11 Theme color dark */
 .t-color-dark {
     color: $heading-color;
 }
-/* 6.12 Vertical alignment */
+/* 4.12 Vertical alignment */
 .t-center-vertical {
     position: relative;
     top: 50%;
     transform: translateY(-50%)
+}
+/* 4.13 Image full width */
+.t-img {
+    width: 100%;
 }
