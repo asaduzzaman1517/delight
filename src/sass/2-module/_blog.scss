@@ -1,0 +1,19 @@
+/* 2.11 Blog */
+.blog {
+    @extend .t-bg-light;
+    &--img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    &--date {
+        font-size: .7rem;
+        letter-spacing: .10rem;
+        margin-bottom: .4rem;
+        display: block;
+        text-transform: uppercase;
+    }
+    &--link:hover {
+        text-decoration: none;
+        color: darken($theme-color, 15%)
+    }
+}
