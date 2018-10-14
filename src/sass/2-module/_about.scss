@@ -1,4 +1,4 @@
-/* 2.3 About Section */
+/* 2.4 About Section */
 .about {
     &--img {
         width: 100%;
@@ -8,8 +8,9 @@
         }
     }
 }
-/* 2.4 About Restaurant Section */
+/* 2.4.1 About Restaurant Section */
 .about-restaurant {
+    background: white;
     &--img {
         @extend .about--img;
     }

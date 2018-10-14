@@ -1,4 +1,4 @@
-/*1.1 Global Style*/
+/* 1.1 Global Style */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: $heading-font;
@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6,
     color: $heading-color;
     text-transform: uppercase;
 }
-/* 1.2 Default Body Font Family*/
+/* 1.2 Default Body Font Family */
 body {
     font-family: $body-font;
     font-weight: $body-font-weight;

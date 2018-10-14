@@ -1,1 +1,49 @@
 /* 2.9 Gallery Style */
+.food-gallery {
+    background: white;
+    &--box {
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            bottom: 1rem;
+            right: 1rem;
+            background: rgba($theme-color, .9);
+            opacity: 0;
+            transition: all ease-in-out 300ms;
+            transform: scale(0);
+        }
+        &:hover::before,::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+        &:hover .food-gallery--text{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    &--img {
+        width: 100%;
+    }
+    &--link {
+        color: $full-light;
+        &:hover {
+            text-decoration: none;
+            color: lighten($theme-color, 20%);
+        }
+    }
+    &--text {
+        position: absolute;
+        left: 3rem;
+        bottom: 3rem;
+        color: $full-light;
+        cursor: pointer;
+        z-index: 1;
+        opacity: 0;
+        transition: all ease-in-out 300ms;
+        transform: scale(0);
+    }
+}

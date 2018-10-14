@@ -1,0 +1,9 @@
+/* 2.1 Header */
+.header {
+    .h4 {
+        @include lg-screen {
+            font-size: .8rem;
+            margin-bottom: 0;
+        }
+    }
+}                                                                                                                                                                                                                                           
