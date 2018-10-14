@@ -29,14 +29,14 @@ $(function(){
     //Fixed Header on Scroll
     $(window).scroll(function(){
         const distTop = $('html').scrollTop();
-        const headerHeight = $('#header').outerHeight();
+        const headerHeight = $('.header').outerHeight();
 
         //Fixed header if this condition true
         if(distTop > headerHeight) {
-            $('#header').addClass('fixed-top');
+            $('.header').addClass('fixed-top');
         }
         else {
-            $('#header').removeClass('fixed-top');
+            $('.header').removeClass('fixed-top');
         }
     });
 
@@ -44,24 +44,24 @@ $(function(){
     $('.navbar-toggler').on('click', function(){
         $('#full-screen').toggleClass('is-nav-fullscreen');
         $('#full-screen ul').toggleClass('is-align-center');
-    })
+    });
     //owl carousel for deal section
     $('.deal--slide').owlCarousel({
         loop: true,
-        nav: true,
-        margin: 15,
+        nav: false,
+        margin: 14,
         responsive: {
             0:{
-                items: 1,
-                nav: false
+                items: 1
             },
             768: {
                 items: 2,
-                nav: true,
-                dots: true
+                dots: false,
+                autoplay: true,
+                autoplayHoverPause: true
             }
         }
-    })
+    });
     //owl carousel for testimonial
     $('.testimonial--slider').owlCarousel({
         loop: true,
@@ -69,5 +69,12 @@ $(function(){
         margin: 15,
         items: 1,
         autoplay: true
-    })
+    });
+    //Menu active on click
+    $('.menu--text').on('click', function(){
+        if (!$(this).hasClass('menu--active')) {
+            $('.menu--active').removeClass('menu--active');
+            $(this).addClass('menu--active');
+        }
+    });
 });

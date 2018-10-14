@@ -1,5 +1,11 @@
-/* 2.6 Menu Section Style */
+/* 2.7 Menu Section Style */
 .menu {
+    &--nav {
+        background: lighten($dark-bg, 77%);
+        @include md-screen {
+            text-align: center;
+        }
+    }
     &--text {
         font-family: $body-font;
         text-transform: capitalize;
@@ -9,6 +15,27 @@
         
         &:hover {
             color: $heading-color;
+            @include md-screen {
+                background: $theme-color;
+                color: $full-light;
+            }
+        }
+        @include md-screen {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+    &--icons {
+        display: none !important;
+        @include md-screen {
+            display: block !important;
+            font-size: 2rem;
+        }
+    }
+    &--active {
+        @include md-screen {
+            background: $theme-color;
+            color: $full-light;
         }
     }
 }

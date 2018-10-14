@@ -155,7 +155,7 @@
                     <span class="t-text-top">our experts</span>
                     <h2>our chef</h2>
                     <hr class="t-hr">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusamus neque et pariatur sunt reiciendis.</p>
+                    <p class="mb-md-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati accusamus neque et pariatur sunt reiciendis.</p>
                 </div>
                 <div class="col-md-8">
                     <div class="row">
@@ -218,9 +218,9 @@
                     <h2>this week's deal</h2>
                     <hr class="t-hr">
                     <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fugiat consequatur Molestias fugiat  </p>
-                    <a href="#" class="btn btn-text btn-themecolor my-3">view menu</a><!--button-->
+                    <a href="#" class="btn btn-text btn-themecolor my-3 mb-md-0">view menu</a><!--button-->
                 </div><!--column-->
-                <div class="col-md-8 mt-3">
+                <div class="col-md-8 mt-3 mt-md-0">
                     <div class="row">
                         <div class="col-12">
                             <div class="deal--slide owl-carousel owl-theme">
@@ -300,19 +300,19 @@
                 <div class="col-md-4">
                     <span class="t-text-top">menu</span>
                     <h2>discover the flavor</h2>
-                    <hr class="t-hr">
+                    <hr class="t-hr mb-md-0">
                 </div><!--column-->
             </div><!--row-->
-            <div class="row">
-                <div class="col-12 my-3">
-                    <ul class="nav t-bg">
-                        <li class="nav-item"><a href="#drink" class="nav-link menu--text" data-toggle="list">drink</a></li>
-                        <li class="nav-item"><a href="#side" class="nav-link menu--text" data-toggle="list">side</a></li>
-                        <li class="nav-item"><a href="#fry" class="nav-link menu--text" data-toggle="list">fry</a></li>
-                        <li class="nav-item"><a href="#meal" class="nav-link menu--text" data-toggle="list">meal</a></li>
+            <div class="row mt-md-5">
+                <div class="col-12 col-md-4 my-3 my-md-0">
+                    <ul class="nav flex-md-column menu--nav py-md-5">
+                        <li class="nav-item menu--item"><a href="#drink" class="nav-link menu--text menu--active" data-toggle="list"><span class="fas fa-wine-glass d-block mb-md-2 menu--icons"></span>drink</a></li>
+                        <li class="nav-item menu--item"><a href="#side" class="nav-link menu--text border-top " data-toggle="list"><span class="fas fa-mortar-pestle d-block mb-md-2 menu--icons"></span>side</a></li>
+                        <li class="nav-item menu--item"><a href="#fry" class="nav-link menu--text border-top" data-toggle="list"><span class="fas fa-stroopwafel d-block mb-md-2 menu--icons"></span>fry</a></li>
+                        <li class="nav-item menu--item"><a href="#meal" class="nav-link menu--text border-top" data-toggle="list"><span class="fas fa-concierge-bell d-block mb-md-2 menu--icons"></span>meal</a></li>
                     </ul><!--nav-->
                 </div><!--column-->
-                <div class="col-12 mt-3">
+                <div class="col-12 col-md-8 mt-3 mt-md-0">
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="drink">
                             <div class="border-bottom mb-3">
@@ -505,30 +505,42 @@
                                 <div class="row mt-3">
                                     <div class="col">
                                         <form action="#">
-                                            <div class="input-group mb-3">
-                                                <input type="text" name="name" class="form-control border-right-0" placeholder="Name">
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text t-theme-color bg-white"><span class="fas fa-asterisk"></span></div>
-                                                </div>
-                                            </div><!--Name-->
-                                            <div class="input-group mb-3">
-                                                <input type="date" name="date" class="form-control border-right-0">
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text t-theme-color bg-white"><span class="far fa-calendar-alt"></span></div>
-                                                </div>
-                                            </div><!--date-->
-                                            <div class="input-group mb-3">
-                                                <input type="time" name="date" class="form-control border-right-0">
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text t-theme-color bg-white"><span class="far fa-clock"></span></div>
-                                                </div>
-                                            </div><!--time-->
-                                            <div class="input-group mb-3">
-                                                <input type="text" name="seatNumber" class="form-control border-right-0" placeholder="Number of Guest">
-                                                <div class="input-group-append">
-                                                    <div class="input-group-text t-theme-color bg-white"><span class="far fa-user"></span></div>
-                                                </div>
-                                            </div><!--Number 0f seats-->
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" name="name" class="form-control border-right-0" placeholder="Name">
+                                                        <div class="input-group-append">
+                                                            <div class="input-group-text t-theme-color bg-white"><span class="fas fa-asterisk"></span></div>
+                                                        </div>
+                                                    </div><!--Name-->
+                                                </div><!--column-->
+                                                <div class="col-md-6">
+                                                    <div class="input-group mb-3">
+                                                        <input type="date" name="date" class="form-control border-right-0">
+                                                        <div class="input-group-append">
+                                                            <div class="input-group-text t-theme-color bg-white"><span class="far fa-calendar-alt"></span></div>
+                                                        </div>
+                                                    </div><!--date-->
+                                                </div><!--column-->
+                                            </div><!--form-row-->
+                                            <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <div class="input-group mb-3">
+                                                        <input type="time" name="date" class="form-control border-right-0">
+                                                        <div class="input-group-append">
+                                                            <div class="input-group-text t-theme-color bg-white"><span class="far fa-clock"></span></div>
+                                                        </div>
+                                                    </div><!--time-->
+                                                </div><!--column-->
+                                                <div class="col-md-6">
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" name="seatNumber" class="form-control border-right-0" placeholder="Number of Guest">
+                                                        <div class="input-group-append">
+                                                            <div class="input-group-text t-theme-color bg-white"><span class="far fa-user"></span></div>
+                                                        </div>
+                                                    </div><!--Number 0f seats-->
+                                                </div><!--column-->
+                                            </div><!--form-row-->
                                             <textarea name="note" cols="30" rows="5" placeholder="Special Notes" class="form-control"></textarea>
                                             <input type="submit" value="Rserve Now" class="btn btn-themecolor btn-text mt-3">
                                         </form>
@@ -553,17 +565,17 @@
                     <hr class="t-hr">
                     <p class="mb-md-0">Lor em ipsum dolor sit amet consectetur adipisicing elit. </p> 
                 </div><!--column-->
-                <div class="col-md mt-3">
+                <div class="col-md mt-3 mt-md-0">
                     <a href="img/f-1.png"><img src="img/thumb-1.jpg" alt="delight food" class="t-img"></a>
                 </div>
-                <div class="col-md mt-3">
+                <div class="col-md mt-3 mt-md-0">
                     <a href="#"><img src="img/thumb-2.jpg" alt="delight food" class="t-img"></a>
                 </div>
                 <div class="w-100 my-md-3"></div>
-                <div class="col-md-4 mt-3">
+                <div class="col-md-4 mt-3 mt-md-0">
                     <a href="#"><img src="img/thumb-3.jpg" alt="delight food" class="t-img"></a>
                 </div>
-                <div class="col-md-8 d-none">
+                <div class="col-md-8 d-none d-md-block">
                     <a href="#"><img src="img/thumb-5.jpg" alt="delight food" class="t-img"></a>
                 </div>
             </div><!--row-->
@@ -575,22 +587,22 @@
     <section class="testimonial t-section-gap t-bg-light">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col col-md-8">
                     <span class="t-text-top">testimonial</span>
                     <h2>what our customer says about us</h2>
-                    <hr class="t-hr">
+                    <hr class="t-hr mb-md-0">
                 </div><!--column-->
             </div><!--row-->
-            <div class="row">
+            <div class="row mt-md-5">
                 <div class="col">
                     <div class="owl-carousel testimonial--slider">
                         <div class="testimonial--slide">
                             <div class="row">
                                 <div class="col-md-4 text-center">
-                                    <img src="img/chef-3.jpg" alt="chef image" class="testimonial--img my-4">
+                                    <img src="img/chef-3.jpg" alt="chef image" class="testimonial--img my-4 my-md-0">
                                 </div><!--column-->
                                 <div class="col-md-8">
-                                    <blockquote class="blockquote text-center testimonial--before">
+                                    <blockquote class="blockquote text-center text-md-left testimonial--before pr-md-4 py-md-4">
                                         <p>
                                         Lorem ipsum dolor siamet conse ctetur adipisicing elit. Sint tenetur eos repellat quo, accusamu repellendus tempora harum doloremque est quae itaque, illo voluptatem nesciunt, 
                                         </p>
@@ -601,7 +613,7 @@
                                         <span class="fa fa-star-half-alt t-rating"></span>
                                         <footer class="blockquote-footer text-right mt-4">
                                             <span class="h6">alain ducasse</span>
-                                            <span class="t-text-top">forb magazine</span>
+                                            <span class="t-text-top mb-md-0">forb magazine</span>
                                         </footer>
                                     </blockquote>
                                 </div><!--column-->
@@ -610,10 +622,10 @@
                         <div class="testimonial--slide">
                             <div class="row">
                                 <div class="col-md-4 text-center">
-                                    <img src="img/chef-4.jpg" alt="chef image" class="testimonial--img my-4">
+                                    <img src="img/chef-4.jpg" alt="chef image" class="testimonial--img my-4 my-md-0">
                                 </div><!--column-->
                                 <div class="col-md-8">
-                                    <blockquote class="blockquote text-center testimonial--before">
+                                    <blockquote class="blockquote text-center testimonial--before text-md-left pr-md-4 py-md-4">
                                         <p>
                                         Lorem ipsum dolor siamet conse ctetur adipisicing elit. Sint tenetur eos repellat quo, accusamu repellendus tempora harum doloremque est quae itaque, illo voluptatem nesciunt, 
                                         </p>
@@ -624,7 +636,7 @@
                                         <span class="fa fa-star-half-alt t-rating"></span>
                                         <footer class="blockquote-footer text-right mt-4">
                                             <span class="h6">asaduzzaman sarker</span>
-                                            <span class="t-text-top">food lover</span>
+                                            <span class="t-text-top mb-md-0">food lover</span>
                                         </footer>
                                     </blockquote>
                                 </div><!--column-->
@@ -633,10 +645,10 @@
                         <div class="testimonial--slide">
                             <div class="row">
                                 <div class="col-md-4 text-center">
-                                    <img src="img/chef-5.jpg" alt="chef image" class="testimonial--img my-4">
+                                    <img src="img/chef-5.jpg" alt="chef image" class="testimonial--img my-4 my-md-0">
                                 </div><!--column-->
                                 <div class="col-md-8">
-                                    <blockquote class="blockquote text-center testimonial--before">
+                                    <blockquote class="blockquote text-md-left text-center testimonial--before pr-md-4 py-md-4">
                                         <p>
                                         Lorem ipsum dolor siamet conse ctetur adipisicing elit. Sint tenetur eos repellat quo, accusamu repellendus tempora harum doloremque est quae itaque, illo voluptatem nesciunt, 
                                         </p>
@@ -645,9 +657,9 @@
                                         <span class="fa fa-star t-rating"></span>
                                         <span class="fa fa-star t-rating"></span>
                                         <span class="fa fa-star-half-alt t-rating"></span>
-                                        <footer class="blockquote-footer text-right mt-4">
+                                        <footer class="blockquote-footer text-right mt-4 ">
                                             <span class="h6">antony brudin</span>
-                                            <span class="t-text-top">food bloger</span>
+                                            <span class="t-text-top mb-md-0">food bloger</span>
                                         </footer>
                                     </blockquote>
                                 </div><!--column-->
@@ -673,11 +685,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos minus animi suscipit quibusdam deser</p>
                     <span class="t-text-top mb-0">+88017178800</span>
                 </div><!--column-->
-                <div class="col-md my-4">
+                <div class="col-md my-4 my-md-0">
                     <div class="event--gallery">
                         <img src="img/chef-6.jpg" alt="chef" class="event--img">
                         <h6>any meeting , private event</h6>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati debitis aliquam natus vel? Voluptate, repellendus inventore odit beatae culpa </p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati debitis aliquam natus vel? Voluptate, repellendus inventore odit </p>
                         <a href="#" class="t-text-top mb-0 event--link d-inline-block">learn more</a>
                     </div><!--event-gallery-->            
                 </div><!--column-->
@@ -701,11 +713,11 @@
                 <div class="col">
                     <span class="t-text-top">blog</span>
                     <h2>latest news recipes</h2>
-                    <hr class="t-hr">
+                    <hr class="t-hr mb-md-0">
                 </div><!--column-->
             </div><!--row-->
-            <div class="row">
-                <div class="col-md-4 mt-3 mb-4">
+            <div class="row mt-md-5">
+                <div class="col-md-4 mt-3 mt-md-0 mb-4 mb-md-0">
                     <div class="blog--gallery">
                         <img src="img/chef-6.jpg" alt="chef" class="blog--img">
                         <h6>premium experience dining with delicious food</h6>
@@ -714,7 +726,7 @@
                         <a href="#" class="t-text-top mb-0 blog--link d-inline-block">learn more</a>
                     </div><!--blog-gallery-->  
                 </div><!--column-->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <div class="blog--gallery">
                         <img src="img/food-5.jpeg" alt="chef" class="blog--img">
                         <h6>crafty cook and decorate our food with love</h6>
@@ -742,17 +754,17 @@
         <div class="footer--top t-section-gap">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 mb-md-0">
                         <a href="index.html">
                             <img src="img/logo.png" alt="delight logo" class="t-logo mb-3">
                         </a>
-                        <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis recusandae rem voluptatem vel sint totam</p>
+                        <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis recusandae </p>
                         <ul class="footer--list">
                             <li class="footer--list-item"><span class="far fa-envelope t-theme-color mr-2"></span><span class="text-muted">delight@gmail.com</span></li>
                             <li class="footer--list-item"><span class="fas fa-phone-square t-theme-color mr-2"></span><span class="text-muted">+880 168390997</span></li>
                         </ul>
                     </div><!--column-->
-                    <div class="col-md-4 mb-4">
+                    <div class="col-md-4 mb-4 mb-md-0">
                         <h5 class="text-light">usfull links</h5>
                         <ul class="footer--list">
                             <li class="footer--list-item"><a href="#" class="footer--link">privacy policy</a></li>
@@ -763,7 +775,7 @@
                         </ul>
                     </div><!--column-->
                     <div class="col-md-4">
-                        <h5 class="text-light">subscribe to newsletter</h5>
+                        <h5 class="text-light">newsletter</h5>
                         <form action="#">
                             <div class="input-group">
                                 <input type="text" placeholder="Email" class="form-control">

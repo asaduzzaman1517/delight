@@ -3,6 +3,9 @@
     &--img {
         width: 100%;
         display: none;
+        @include md-screen {
+            display: block;
+        }
     }
 }
 /* 2.4 About Restaurant Section */
