@@ -1,6 +1,5 @@
 /* 2.1 Custom Button Style*/
 .btn {
-    margin: 1rem 0;
     border-radius: .1rem;
     &-themecolor {
         background: $theme-color;
@@ -12,6 +11,9 @@
         color: $full-light;
         font-weight: 600;
         text-transform: uppercase;
+    }
+    &-text-light {
+        color: $full-light;
     }
     &:hover {
         color: lighten($theme-color, 20%);
