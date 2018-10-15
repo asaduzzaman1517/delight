@@ -14,10 +14,6 @@ import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
 // Importing Favicon Image
 import '../img/favicon.ico';
 import '../img/apple-icon.png';
-import '../img/f-1.png';
-import '../img/f-2.jpeg';
-import '../img/f-3.jpeg';
-import '../img/f-5.jpeg';
 
 //Importing SASS File
 import '../sass/style.scss';
@@ -25,6 +21,7 @@ import '../sass/style.scss';
 
 // Document Ready Function
 $(function(){
+    "use strict"
 
     //Fixed Header on Scroll
     $(window).scroll(function(){
@@ -77,4 +74,8 @@ $(function(){
             $(this).addClass('menu--active');
         }
     });
+});
+//Preloader
+$(window).on('load', function(){
+    $('.preloader').fadeOut(500);
 });
