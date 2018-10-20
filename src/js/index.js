@@ -7,8 +7,9 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.min';
 import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 //Owl.carousel
-import 'owl.carousel';
-import '../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+import '../../node_modules/owl.carousel/dist/owl.carousel.min';
+
+
 
 
 // Importing Favicon Image
@@ -17,6 +18,7 @@ import '../img/apple-icon.png';
 
 //Importing SASS File
 import '../sass/style.scss';
+
 
 
 // Document Ready Function
