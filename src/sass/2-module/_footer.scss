@@ -7,6 +7,9 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        &-item {
+            color: lighten($heading-color, 50%);
+        }
     }
     &--icon {
         margin-right: 1rem;
@@ -16,11 +19,11 @@
         }
     }
     &--link {
-        color: $text-mute;
+        @extend .footer--list-item;
         text-transform: capitalize;
         &:hover {
             text-decoration: none;
-            color: lighten($text-mute, 15%);
+            color: lighten($heading-color, 70%);
         }
     }
     &--bottom {
@@ -29,10 +32,10 @@
         color: $full-light;
     }
     &--copy {
-        color: lighten($text-mute, 15%);
+        color: lighten($heading-color, 50%);
         text-transform: capitalize;
         &:hover {
-            color: $theme-color;
+            color: lighten($heading-color, 70%);
             text-decoration: none;
         }
     }

@@ -1,7 +1,9 @@
 /* 2.4 About Section */
 .about {
-    &--img {
+    &--bg {
         width: 100%;
+        background: url(../img/our-story.png) top center no-repeat;
+        background-size: contain;
         display: none;
         @include md-screen {
             display: block;
@@ -11,7 +13,12 @@
 /* 2.4.1 About Restaurant Section */
 .about-restaurant {
     background: white;
-    &--img {
-        @extend .about--img;
+    &--bg {
+        background: url(../img/about-restaurant.png) top center no-repeat;
+        background-size: contain;
+        display: none;
+        @include md-screen {
+            display: block;
+        }
     }
 }

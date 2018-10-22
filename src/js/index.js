@@ -54,6 +54,12 @@ $(function(){
                 items: 1
             },
             768: {
+                items: 1,
+                dots: false,
+                autoplay: true,
+                autoplayHoverPause: true
+            },
+            992: {
                 items: 2,
                 dots: false,
                 autoplay: true,
